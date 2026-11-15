@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Games</title>
+    <style>
+      :root {
+        --bg: #fff9f7;
+        --card: #ffffff;
+        --rose: #d66c82;
+        --rose-dark: #a74d65;
+        --gold: #f0d69a;
+        --text: #3b2d2d;
+        --muted: #766868;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #fff9f7, #fff1ef);
+        color: var(--text);
+      }
+
+      .card {
+        width: min(90vw, 760px);
+        background: var(--card);
+        border: 1px solid rgba(214, 108, 130, 0.15);
+        border-radius: 24px;
+        box-shadow: 0 20px 50px rgba(167, 77, 101, 0.12);
+        padding: 48px 32px;
+        text-align: center;
+      }
+
+      .badge {
+        display: inline-block;
+        background: rgba(240, 214, 154, 0.32);
+        color: var(--rose-dark);
+        border-radius: 999px;
+        padding: 8px 18px;
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 20px 0 12px;
+        font-size: clamp(2.2rem, 5vw, 4.2rem);
+        color: var(--rose-dark);
+      }
+
+      p {
+        max-width: 620px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      .ring {
+        width: 90px;
+        height: 90px;
+        margin: 24px auto 0;
+        border: 6px solid var(--gold);
+        border-top-color: var(--rose);
+        border-radius: 50%;
+        animation: spin 6s linear infinite;
+      }
+
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="badge">Wedding Weekend</div>
+      <h1>Wedding Games</h1>
+      <p>
+        Welcome to our celebration! This page is ready to be shared with friends and family.
+        Add your games, prompts, or QR code here whenever you’re ready.
+      </p>
+      <div class="ring" aria-hidden="true"></div>
+    </main>
+  </body>
+</html>
